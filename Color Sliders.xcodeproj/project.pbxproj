@@ -12,6 +12,7 @@
 		FD9931032023986C00259371 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9931012023986C00259371 /* Main.storyboard */; };
 		FD9931052023986C00259371 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD9931042023986C00259371 /* Assets.xcassets */; };
 		FD9931082023986C00259371 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9931062023986C00259371 /* LaunchScreen.storyboard */; };
+		FDADA5A720615E020092951F /* ColorSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDADA5A620615E020092951F /* ColorSliderViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		FD9931042023986C00259371 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD9931072023986C00259371 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD9931092023986C00259371 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDADA5A420615E010092951F /* Color Sliders-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Color Sliders-Bridging-Header.h"; sourceTree = "<group>"; };
+		FDADA5A520615E020092951F /* ColorSliderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorSliderViewController.h; sourceTree = "<group>"; };
+		FDADA5A620615E020092951F /* ColorSliderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ColorSliderViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,9 @@
 				FD9931042023986C00259371 /* Assets.xcassets */,
 				FD9931062023986C00259371 /* LaunchScreen.storyboard */,
 				FD9931092023986C00259371 /* Info.plist */,
+				FDADA5A520615E020092951F /* ColorSliderViewController.h */,
+				FDADA5A620615E020092951F /* ColorSliderViewController.m */,
+				FDADA5A420615E010092951F /* Color Sliders-Bridging-Header.h */,
 			);
 			path = "Color Sliders";
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 				TargetAttributes = {
 					FD9930F92023986B00259371 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD9931002023986C00259371 /* ViewController.swift in Sources */,
+				FDADA5A720615E020092951F /* ColorSliderViewController.m in Sources */,
 				FD9930FE2023986C00259371 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,12 +283,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGL44JG796;
 				INFOPLIST_FILE = "Color Sliders/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.fisherds.Color-Sliders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Color Sliders/Color Sliders-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +301,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGL44JG796;
 				INFOPLIST_FILE = "Color Sliders/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.fisherds.Color-Sliders";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Color Sliders/Color Sliders-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
